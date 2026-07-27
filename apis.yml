@@ -1,7 +1,29 @@
 aid: houmo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/houmo.png
 name: houmo
-description: houmo is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  HOUMO.AI (后摩智能) is a Chinese fabless semiconductor company founded in 2020
+  that develops compute-in-memory (CIM / storage-and-computation integrated) edge
+  AI chips for running large language models and other AI workloads on endpoint
+  devices. Its products include the MOMAGIC (H30) series processors, LIQING M.2
+  modules, and Limou (LM 5050 / LM 5070 / LM 30) AI acceleration cards, paired with
+  the Houmo Avenue software toolchain (PyTorch / TensorFlow / ONNX, CUDA-style
+  front end) for model quantization, compilation, and deployment. The company
+  targets edge inference, autonomous driving, embodied robotics, and intelligent
+  mobile devices, and runs a developer community with documentation and downloads.
+  This profile is a hardware / AI-chip vendor with a developer toolchain rather than
+  a public web API provider; no REST/OpenAPI, OAuth, or hosted API surface was found.
 url: https://raw.githubusercontent.com/api-evangelist/houmo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Artificial Intelligence
+- Semiconductors
+- AI Chips
+- Edge Computing
+- Compute In Memory
+- Machine Learning
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/houmo-domain-security.yml
 - type: Website
-  url: https://houmo.ai
+  url: https://www.houmoai.com/en/
+- type: DeveloperPortal
+  url: https://developer.houmoai.com/
+- type: Documentation
+  url: https://developer.houmoai.com/
+- type: GitHubOrganization
+  url: https://github.com/houmo-ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
