@@ -52,7 +52,7 @@ tags:
 - AI Chips
 - Edge Computing
 - Compute-in-Memory
-- Machine-Learning
+- Machine Learning
 - Hardware
 tags_raw:
 - Company
@@ -63,6 +63,7 @@ tags_raw:
 - Compute In Memory
 - Machine Learning
 - Hardware
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
